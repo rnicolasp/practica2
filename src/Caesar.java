@@ -2,9 +2,15 @@
 public class Caesar {
     static String cypher(String s, int delta) {
         StringBuilder result = new StringBuilder();
+        s = s.toUpperCase();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if (Character.isLetter(c)) {
+            if (c<65 || c>90) {
+                if (Character.isLetter(c)) {
+                    result.append(c);
+                    continue;
+                }
+            } else if (Character.isLetter(c)) {
                 char base = Character.isUpperCase(c) ? 'A' : 'a';
                 c = (char) ((c - base + delta) % 26 + base);
             }
