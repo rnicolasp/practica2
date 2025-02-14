@@ -9,11 +9,11 @@ public class VigenereTest {
         assertEquals("ZZZ", Vigenere.encode("YYY", "AAA"));
         assertEquals("BCD", Vigenere.encode("ABC", "AA"));
         assertEquals("CPM VFE", Vigenere.encode("BEN FET", "AKYP"));
-        assertEquals("YQ USNCT WK WYWEWMF", Vigenere.encode("El Camió és vermell", "terra"));
         assertEquals("DESBC", Vigenere.encode("CDRAB", "AAA"));
         assertEquals("VOUMYSLVQVY", Vigenere.encode("JFRHDGCSLAM", "LICEU"));
         assertEquals("AAA", Vigenere.encode("ZZZ", "AAA"));
         assertEquals("NWGU US EPA EUM", Vigenere.encode("AVUI FA BON DIA", "MALLORCA"));
+        assertEquals("YQ USNCT WK WYWEWMF", Vigenere.encode("El Camió és vermell", "terra"));
         assertEquals("YM SUGLBOSF PJBQOYSZ E'IU SZUOPFIFBN NJXUYT QQHUEZE", Vigenere.encode("El xifratge Vigenere s'ha reinventat moltes vegades", "taula"));
         assertEquals("XZFNPC PB RW AXOCLU ARCRDRE JIB FBRJCRP MP UX ETZRRANARL XK ND YLC EALKLA FWQXOVLLFX CNIJERSJ L UX LZVRWTCXC NXJ, YPA BGPVMUP, NIB OJOAPAP JYDKLTB, IND YORYLFYLUP YZUFCTZRND, NIB AALSPLQND LLU·WJYXCJQRFB NDP B'BBEJK MFNKC L CBAXN F UPB QJDZRND YBWONKCD MB APBLUOAB NY UBB BDXUD YLMPD XSFMXA",
                 Vigenere.encode("Aquest és un portal dirigit als usuaris de la Viquipèdia on es pot trobar informació relativa a la comunitat com, per exemple, els darrers anuncis, les principals polítiques, els projectes col·laboratius que s'estan duent a terme i les tasques pendents de resoldre en les quals podeu ajudar", "wiki"));
